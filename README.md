@@ -16,14 +16,9 @@ forge install
 ### Build
 
 ```shell
-forge build
+forge build --extra-output-files bin
 ```
 
-### Test
-
-```shell
-forge test
-```
 
 ### Run
 

@@ -25,3 +25,11 @@ forge build --extra-output-files bin
 ```shell
 python3 example.py
 ```
+
+
+### Run
+
+```shell
+export OPENAI_API_KEY="your_openai_key"
+python3 agent-example.py
+```

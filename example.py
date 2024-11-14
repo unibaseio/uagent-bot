@@ -16,12 +16,12 @@ w3.eth.default_account = w3.eth.accounts[0]
 Token = w3.eth.contract(abi=contract_abi['abi'], bytecode=contract_bytecode)
 tx_hash = Token.constructor("EXAMPLE", 21000000).transact()
 tx_receipt = w3.eth.wait_for_transaction_receipt(tx_hash)
-
-print(f"Erc20 address: {tx_receipt.contractAddress}")
+erc20_address = tx_receipt.contractAddress
+print(f"Erc20 address: {erc20_address}")
 
 
 # Transfer Erc20
-Token = w3.eth.contract(address=tx_receipt.contractAddress, abi=contract_abi['abi'])
+Token = w3.eth.contract(address=erc20_address, abi=contract_abi['abi'])
 recipient = Account.create().address
 bal_before_transfer = Token.functions.balanceOf(recipient).call()
 print(f"Recipient: {recipient}, Balance: {bal_before_transfer}")

@@ -1,8 +1,9 @@
 
 ## Prerequisites
 
-Foundry: https://github.com/foundry-rs/foundry
-web3py: https://web3py.readthedocs.io/
+[https://github.com/foundry-rs/foundry](https://github.com/foundry-rs/foundry)
+
+[https://web3py.readthedocs.io/](https://web3py.readthedocs.io/)
 
 ## Usage
 
